@@ -20,7 +20,7 @@ function Greeting(props) {
     <div>
       <form>
         <label htmlFor={nameInputId}>Name: </label>
-        <input onChange={handleChange} defaultValue={initialName} id={nameInputId} />
+        <input onChange={handleChange} value={name} id={nameInputId} />
       </form>
       {name ? <strong>Hello {name}</strong> : 'Please type your name'}
     </div>
